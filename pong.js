@@ -48,7 +48,7 @@ const net = {
     color: "WHITE"
 }
 
-function drawRectangle(x, y, w, h, color) {
+function drawRect(x, y, w, h, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 }
@@ -78,7 +78,7 @@ function resetBall() {
 
 function drawNet() {
     for (let i = 0; i <= canvas.height; i += 15) {
-        drawRectangle(net.x, net.y + i, net.width, net.height, net.color);
+        drawRect(net.x, net.y + i, net.width, net.height, net.color);
     }
 }
 
@@ -150,7 +150,7 @@ function update() {
 
 function rendering() {
 
-    drawRectangle(0, 0, canvas.width, canvas.height, "#000");
+    drawRect(0, 0, canvas.width, canvas.height, "#000");
 
     drawText(user.score, canvas.width / 4, canvas.height / 5);
 
@@ -158,9 +158,9 @@ function rendering() {
 
     drawNet();
 
-    drawRectangle(user.x, user.y, user.width, user.height, user.color);
+    drawRect(user.x, user.y, user.width, user.height, user.color);
 
-    drawRectangle(computer.x, computer.y, computer.width, computer.height, computer.color);
+    drawRect(computer.x, computer.y, computer.width, computer.height, computer.color);
 
     drawCurve(ball.x, ball.y, ball.radius, ball.color);
 
