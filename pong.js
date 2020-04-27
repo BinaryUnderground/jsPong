@@ -28,7 +28,7 @@ const user = {
     width: 10,
     height: 100,
     score: 0,
-    color: "RED"
+    color: "BLUE"
 }
 
 const computer = {
@@ -37,7 +37,7 @@ const computer = {
     width: 10,
     height: 100,
     score: 0,
-    color: "BLUE"
+    color: "RED"
 }
 
 const net = {
