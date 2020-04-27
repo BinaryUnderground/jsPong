@@ -144,7 +144,7 @@ function update() {
         ball.velocityY = ball.speed * Math.sin(angleRad);
 
 
-        ball.speed += 0.2;
+        ball.speed += 0.1;
     }
 }
 
