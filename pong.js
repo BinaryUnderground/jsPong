@@ -171,6 +171,6 @@ function game() {
     rendering();
 }
 
-let framePerSecond = 50;
+let framePerSecond = 60;
 
 let loop = setInterval(game, 1000 / framePerSecond);
