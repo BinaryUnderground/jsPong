@@ -45,7 +45,7 @@ const net = {
     y: 0,
     height: 10,
     width: 2,
-    color: "GREY"
+    color: "WHITE"
 }
 
 function drawRectangle(x, y, w, h, color) {
