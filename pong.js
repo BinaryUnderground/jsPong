@@ -118,7 +118,7 @@ function update() {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.1;
+    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.3;
 
     if (ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height) {
         ball.velocityY = -ball.velocityY;
