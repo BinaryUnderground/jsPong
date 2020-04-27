@@ -48,8 +48,10 @@ const net = {
     color: "WHITE"
 }
 
-function drawRectangle(x, y, w, h, color) {
-    ctx.fillStyle = color;
+const fillCol
+
+function drawRectangle(x, y, w, h, fillCol) {
+    ctx.fillStyle = fillCol;
     ctx.fillRect(x, y, w, h);
 }
 
