@@ -23,18 +23,18 @@ const ball = {
 }
 
 const user = {
-    x: 0, // left side of canvas
-    y: (canvas.height - 100) / 2, // -100 the height of paddle
-    width: 10,
+    x: 0, 
+    y: (canvas.height - 100) / 2, 
+    width: 12,
     height: 100,
     score: 0,
     color: "BLUE"
 }
 
 const computer = {
-    x: canvas.width - 10, // - width of paddle
+    x: canvas.width - 10, 
     y: (canvas.height - 100) / 2, 
-    width: 10,
+    width: 12,
     height: 100,
     score: 0,
     color: "RED"
@@ -118,7 +118,7 @@ function update() {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.1;
+    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.8;
 
     if (ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height) {
         ball.velocityY = -ball.velocityY;
