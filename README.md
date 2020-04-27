@@ -1,2 +1,2 @@
 # jsPong
- Pong game written in Javascript using mouse position event listener.
+ Pong game written in Javascript using a mouse position event listener.
