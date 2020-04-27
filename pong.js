@@ -28,7 +28,7 @@ const user = {
     width: 10,
     height: 100,
     score: 0,
-    color: "WHITE"
+    color: "BLUE"
 }
 
 const computer = {
@@ -37,18 +37,18 @@ const computer = {
     width: 10,
     height: 100,
     score: 0,
-    color: "WHITE"
+    color: "RED"
 }
 
 const net = {
     x: (canvas.width - 2) / 2,
     y: 0,
     height: 10,
-    width: 2,
-    color: "WHITE"
+    width: 4,
+    color: "ORANGE"
 }
 
-function drawRect(x, y, w, h, color) {
+function drawRectangle(x, y, w, h, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 }
@@ -78,13 +78,13 @@ function resetBall() {
 
 function drawNet() {
     for (let i = 0; i <= canvas.height; i += 15) {
-        drawRect(net.x, net.y + i, net.width, net.height, net.color);
+        drawRectangle(net.x, net.y + i, net.width, net.height, net.color);
     }
 }
 
 function drawText(text, x, y) {
     ctx.fillStyle = "#FFF";
-    ctx.font = "75px fantasy";
+    ctx.font = "75px Aachen Bold";
     ctx.fillText(text, x, y);
 }
 
@@ -150,7 +150,7 @@ function update() {
 
 function rendering() {
 
-    drawRect(0, 0, canvas.width, canvas.height, "#000");
+    drawRectangle(0, 0, canvas.width, canvas.height, "#000");
 
     drawText(user.score, canvas.width / 4, canvas.height / 5);
 
@@ -158,9 +158,9 @@ function rendering() {
 
     drawNet();
 
-    drawRect(user.x, user.y, user.width, user.height, user.color);
+    drawRectangle(user.x, user.y, user.width, user.height, user.color);
 
-    drawRect(computer.x, computer.y, computer.width, computer.height, computer.color);
+    drawRectangle(computer.x, computer.y, computer.width, computer.height, computer.color);
 
     drawCurve(ball.x, ball.y, ball.radius, ball.color);
 
