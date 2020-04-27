@@ -73,7 +73,7 @@ function resetBall() {
     ball.x = canvas.width / 2;
     ball.y = canvas.height / 2;
     ball.velocityX = -ball.velocityX;
-    ball.speed = 7;
+    ball.speed = 10;
 }
 
 function drawNet() {
@@ -118,7 +118,7 @@ function update() {
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
 
-    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.9;
+    computer.y += ((ball.y - (computer.y + computer.height / 2))) * 0.1;
 
     if (ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height) {
         ball.velocityY = -ball.velocityY;
