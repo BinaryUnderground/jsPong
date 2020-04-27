@@ -28,7 +28,7 @@ const user = {
     width: 10,
     height: 100,
     score: 0,
-    color: "BLUE"
+    color: "WHITE"
 }
 
 const computer = {
@@ -37,7 +37,7 @@ const computer = {
     width: 10,
     height: 100,
     score: 0,
-    color: "RED"
+    color: "WHITE"
 }
 
 const net = {
@@ -48,7 +48,9 @@ const net = {
     color: "WHITE"
 }
 
-const fillCol
+const fillCol = {
+color: "WHITE"
+}
 
 function drawRectangle(x, y, w, h, fillCol) {
     ctx.fillStyle = fillCol;
