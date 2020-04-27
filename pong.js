@@ -60,7 +60,7 @@ function drawRectangle(x, y, w, h, fillCol) {
 function drawCurve(x, y, r, color) {
     ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.curve(x, y, r, 0, Math.PI * 2, true);
+    ctx.drawCurve(x, y, r, 0, Math.PI * 2, true);
     ctx.closePath();
     ctx.fill();
 }
@@ -92,7 +92,7 @@ function drawText(text, x, y) {
     ctx.fillText(text, x, y);
 }
 
-function ballColl(b, p) {
+function ballCollision(b, p) {
     p.top = p.y;
     p.bottom = p.y + p.height;
     p.left = p.x;
@@ -131,7 +131,7 @@ function update() {
 
     let player = (ball.x + ball.radius < canvas.width / 2) ? user : computer;
 
-    if (ballColl(ball, player)) {
+    if (ballCollision(ball, player)) {
    
         hit.play();
  
