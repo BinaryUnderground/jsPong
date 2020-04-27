@@ -48,19 +48,15 @@ const net = {
     color: "WHITE"
 }
 
-const fillCol = {
-color: "WHITE"
-}
-
-function drawRectangle(x, y, w, h, fillCol) {
-    ctx.fillStyle = fillCol;
+function drawRectangle(x, y, w, h, color) {
+    ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 }
 
 function drawCurve(x, y, r, color) {
     ctx.fillStyle = color;
     ctx.beginPath();
-    ctx.drawCurve(x, y, r, 0, Math.PI * 2, true);
+    ctx.arc(x, y, r, 0, Math.PI * 2, true);
     ctx.closePath();
     ctx.fill();
 }
