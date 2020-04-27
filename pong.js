@@ -24,7 +24,7 @@ const ball = {
 
 const user = {
     x: 0, 
-    y: (canvas.height - 100) / 2, 
+    y: (canvas.height - 100) / 3, 
     width: 12,
     height: 100,
     score: 0,
@@ -33,7 +33,7 @@ const user = {
 
 const computer = {
     x: canvas.width - 10, 
-    y: (canvas.height - 100) / 2, 
+    y: (canvas.height - 100) / 3, 
     width: 12,
     height: 100,
     score: 0,
